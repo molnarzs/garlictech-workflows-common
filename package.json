@@ -1,6 +1,6 @@
 {
   "name": "@garlictech/workflows-common",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generic workflow management for Garlic Tech projects.",
   "license": "SEE LICENSE IN license.txt",
   "repository": {
