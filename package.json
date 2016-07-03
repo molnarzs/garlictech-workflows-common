@@ -23,6 +23,7 @@
   "bugs": {
     "url": "https://github.com/garlictech/garlictech-workflows-common/issues?status=new&status=open"
   },
+  "files": ["dist"],
   "homepage": "https://github.com/garlictech/garlictech-workflows-common",
   "dependencies": {
     "coffee-script": "1.x.x",

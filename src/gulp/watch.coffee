@@ -1,10 +1,10 @@
 watch = require 'gulp-debounced-watch'
-common = require '../src/gulp/common'
+common = require './common'
 
-module.exports = (gulp, c, fileTypes) ->
+module.exports = (gulp, c) ->
   config = common.GetConfig c
 
   return ->
-    _.forEach fileTypes, (type) ->
+    _.forEach common.WatchFileTypes, (type) ->
       watch ["#{config.srcRoot}/**/*.#{type}"], {debounceTimeout: 1000}, ->
         gulp.start 'build'

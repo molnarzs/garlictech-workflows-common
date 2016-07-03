@@ -4,6 +4,7 @@ p = require('gulp-load-plugins')()
 # handle src coffeescript files: static compilation
 module.exports = (gulp, c) ->
   config = common.GetConfig c
+  common.WatchFileTypes.push 'coffee'
   coffeeFiles = ["#{config.srcRoot}/**/*.coffee"]
 
   return ->
