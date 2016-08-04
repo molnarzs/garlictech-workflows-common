@@ -23,9 +23,12 @@
   "bugs": {
     "url": "https://github.com/garlictech/garlictech-workflows-common/issues?status=new&status=open"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/garlictech/garlictech-workflows-common",
   "dependencies": {
+    "chai": "^3.5.0",
     "coffee-script": "1.x.x",
     "coffeelint": "1.x.x",
     "gulp": "3.x.x",
@@ -40,7 +43,9 @@
     "gulp-load-plugins": "1.x.x",
     "gulp-size": "^2.1.0",
     "gulp-tag-version": "1.x.x",
-    "gulp-using": "0.x.x"
+    "gulp-using": "0.x.x",
+    "sinon": "^1.17.5",
+    "sinon-chai": "^2.8.0"
   },
   "scripts": {
     "start-dev": "gulp build && gulp watch",

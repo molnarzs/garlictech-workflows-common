@@ -14,6 +14,7 @@ module.exports =
 
 
   HandleError: (err) ->
+    console.log err
     process.exit 1
 
 
