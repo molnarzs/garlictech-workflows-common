@@ -19,12 +19,11 @@ module.exports =
 
 
   GetConfig: (c) ->
-    srcRoot = "src"
+    srcRoot = c.srcRoot ? "src"
     buildRoot = "dist"
-
     root: c.base
     base: path.join c.base, srcRoot
     buildRoot: buildRoot
     srcRoot: srcRoot
-    unittestEntry: path.join buildRoot, 'test', 'unittest', 'index.js'
-    systemtestEntry: path.join buildRoot, 'test', 'systemtest', 'index.js'
+    unittestEntry: path.join buildRoot, 'test', 'unit', 'index.js'
+    systemtestEntry: path.join buildRoot, 'test', 'system', 'index.js'
